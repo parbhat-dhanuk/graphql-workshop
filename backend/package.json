@@ -1,0 +1,43 @@
+{
+  "name": "graphql-pauth",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev" : "ts-node-dev src/index.ts", 
+    "build" : "rm -rf dist && tsc -p . --traceResolution", 
+    "lint" : "eslint . --ext .js,.tsx,.ts", 
+    "lint:fix" : "eslint . --fix --ext .js,.tsx,.ts", 
+    "test": "jest src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@apollo/server": "^4.11.0",
+    "@contentpi/lib": "^1.0.10",
+    "@graphql-tools/load-files": "^7.0.0",
+    "@graphql-tools/merge": "^9.0.8",
+    "@graphql-tools/schema": "^10.0.7",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "graphql-middleware": "^6.1.35",
+    "graphql-tag": "^2.12.6",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.13.1",
+    "pg-hstore": "^2.3.4",
+    "pm": "^2.2.6",
+    "sequelize": "^6.37.5",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/jsonwebtoken": "^9.0.7",
+    "eslint": "^9.13.0",
+    "prettier": "^2.8.8",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.6.3"
+  }
+}
